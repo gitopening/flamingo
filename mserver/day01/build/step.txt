@@ -1,0 +1,28 @@
+[root@c7big mserver]# cd day01/
+[root@c7big day01]# ls
+CMakeLists.txt  main.cpp
+[root@c7big day01]# mkdir build
+[root@c7big day01]# cd build/
+[root@c7big build]# cmake ..
+-- The C compiler identification is GNU 4.8.5
+-- The CXX compiler identification is GNU 4.8.5
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /root/mdday/flamingo/mserver/day01/build
+[root@c7big build]# make
+Scanning dependencies of target hello
+[100%] Building CXX object CMakeFiles/hello.dir/main.cpp.o
+Linking CXX executable hello
+[100%] Built target hello
+[root@c7big build]# ./hello
+hello world
+[root@c7big build]#
+

@@ -1,0 +1,1 @@
+/root/mdday/flamingo/mserver/day01/build/CMakeFiles/hello.dir
