@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/root/mdday/flamingo/mserver/configFileReader/ConfigFileReader.h
+map
+-
+string
+-
+
+/root/mdday/flamingo/mserver/configFileReader/main.cpp
+iostream
+-
+stdio.h
+-
+ConfigFileReader.h
+/root/mdday/flamingo/mserver/configFileReader/ConfigFileReader.h
+
