@@ -1,5 +1,30 @@
 ### FlamingoIM
 
+yum -y install wget vim git texinfo patch make cmake gcc gcc-c++ mariadb-server mariadb mariadb-devel lsof nc
+[root@cenf flamingoserver]# history
+下载安装相关依赖
+    1  yum -y install wget vim git texinfo patch make cmake gcc gcc-c++ mariadb-server mariadb mariadb-devel lsof nc
+ 
+    7   git clone  https://github.com/baloonwj/flamingo.git
+    8  cd flamingo/flamingoserver/
+    9  cmake .
+   10  make
+//修改相应的数据库连接等配置
+	vi etc/chatserver.conf
+//以后台启动的方式 启动相关服务
+   11  ./chatserver -d
+   12  ./fileserver -d
+   13  ./imgserver -d
+//启动数据库
+   24  systemctl start mariadb
+   25  mysql -uroot -p
+   26  systemctl enable mariadb
+//停止防火墙
+   30  systemctl stop firewalld
+
+
+
+
 [Read in English?](https://github.com/balloonwj/flamingo/blob/master/README_en.md)
 
 **我为 Flamingo 专门录制了两部高清技术讲解视频以方便读者学习，视频中介绍了Flamingo的编译和部署方法、整体架构、各个模块的技术实现细节以及如何学习Flamingo的方法，需要视频教程的读者可以扫描[高性能服务器开发]公众号二维码，关注后并在后台回复关键字“flamingo”即可得到下载链接。**
