@@ -4,9 +4,10 @@ yum -y install wget vim git texinfo patch make cmake gcc gcc-c++ mariadb-server 
 [root@cenf flamingoserver]# history
 下载安装相关依赖
     1  yum -y install wget vim git texinfo patch make cmake gcc gcc-c++ mariadb-server mariadb mariadb-devel lsof nc
+     7   git clone  https://github.com/baloonwj/flamingo.git
+     https://github.com/gitopening/flamingo.git
  
-    7   git clone  https://github.com/baloonwj/flamingo.git
-    8  cd flamingo/flamingoserver/
+   8  cd flamingo/flamingoserver/
     9  cmake .
    10  make
 //修改相应的数据库连接等配置
