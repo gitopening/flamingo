@@ -71,11 +71,11 @@ public class NetWorker {
     //最大的包不能超过5M
     private final static int MAX_PACKAGE_SIZE = 5 * 1024 * 1024;
 
-    private static String mChatServerIp = "101.37.25.166";
+    private static String mChatServerIp = "39.108.104.239";
     private static short mChatServerPort = 20000;
-    private static String mFileServerIp = "101.37.25.166";
+    private static String mFileServerIp = "39.108.104.239";
     private static short mFileServerPort = 20001;
-    private static String mImgServerIp = "101.37.25.166";
+    private static String mImgServerIp = "39.108.104.239";
     private static short mImgServerPort = 20002;
 
     private static Socket mSocket;
